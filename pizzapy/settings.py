@@ -26,7 +26,7 @@ SECRET_KEY = 'django-insecure-8m%=eoh@l8j)adneb!hg6twf3uhw^!$3-r^or_$l!v3mb@0jrw
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['127.0.0.1', '.vercel.app']
 
 
 # Application definition
@@ -68,8 +68,8 @@ TEMPLATES = [
     },
 ]
 
-WSGI_APPLICATION = 'pizzapy.wsgi.application'
-
+# WSGI_APPLICATION = 'pizzapy.wsgi.application'
+WSGI_APPLICATION = 'pizzapy.wsgi.app'
 
 # Database
 # https://docs.djangoproject.com/en/4.0/ref/settings/#databases
